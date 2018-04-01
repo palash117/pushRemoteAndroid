@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,26 +10,70 @@
         android:id="@+id/baseTV1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="133dp"
         android:text="TextView"
         tools:layout_editor_absoluteX="164dp"
         tools:layout_editor_absoluteY="184dp" />
 
     <Spinner
         android:id="@+id/spinner1"
-        android:layout_width="368dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="14dp"
         android:background="@android:drawable/btn_dropdown"
         android:spinnerMode="dropdown"
-        tools:layout_editor_absoluteY="0dp"
-        tools:layout_editor_absoluteX="8dp" />
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <Button
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="173dp"
         android:text="Button"
-        tools:layout_editor_absoluteX="129dp"
-        tools:layout_editor_absoluteY="305dp" />
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="255dp" />
+
+    <TextView
+        android:id="@+id/volumeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:layout_alignBaseline="@+id/volMinus5"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        app:layout_constraintEnd_toStartOf="@+id/volMinus5"
+        app:layout_constraintStart_toEndOf="@+id/volPlus5"
+        tools:layout_editor_absoluteY="345dp" />
+
+    <Button
+        android:id="@+id/volMinus5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="119dp"
+        android:layout_marginStart="65dp"
+        android:text="vol -5"
+        tools:layout_editor_absoluteX="59dp"
+        tools:layout_editor_absoluteY="324dp" />
+
+    <Button
+        android:id="@+id/volPlus5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="111dp"
+        android:layout_marginEnd="50dp"
+        android:text="vol +5"
+        tools:layout_editor_absoluteX="249dp"
+        tools:layout_editor_absoluteY="324dp" />
 
 
-</android.support.constraint.ConstraintLayout>
+</android.widget.RelativeLayout>
